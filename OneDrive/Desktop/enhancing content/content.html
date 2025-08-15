@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Content & Form Example</h1>
+        <p>Demonstrating lists, tables, media, and a fully functional HTML5 form with built-in validation.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Popular Programming Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>PHP</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Course Schedule</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Duration</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML5 Basics</td>
+                        <td>2 hours</td>
+                        <td>Dr Kitur</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Styling</td>
+                        <td>3 hours</td>
+                        <td>Md Siele</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>JavaScript Essentials</td>
+                        <td>2 hours</td>
+                        <td>Mr Metto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Sample Media</h2>
+            <img src="hope.jpg" alt="Placeholder Image" width="300">
+            <br><br>
+            <audio controls>
+                <source src="Cody_Carnes_-_Firm_Foundation_He_Won_t__CeeNaija.com_.mp3" type="audio/mpeg">
+            </audio>
+            <br><br>
+        </section>
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="[+][0-9]{10,13}" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Details</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">--Select--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the terms and conditions
+                    </label>
+                </fieldset>
+
+                <br>
+                <button type="submit">Register</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML5 Assignment Demo</p>
+    </footer>
+</body>
+</html>
